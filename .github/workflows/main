@@ -47,6 +47,8 @@ jobs:
     needs: build
     steps:
       - name: Applying Secrets
+        run: |
+          env_setup.sh
         with: # Set the secret as an input
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         env: # Or as an environment variable
