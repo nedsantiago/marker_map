@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "SUPABASE_URL=$SUPABASE_URL
+SUPABASE_ANON_KEY" > .env
